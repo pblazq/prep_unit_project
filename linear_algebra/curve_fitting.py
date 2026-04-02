@@ -1,11 +1,11 @@
 from scipy.optimize import curve_fit
 
 def set_objective(x, a, b):
-""" return the objective function """
-return a * x + b
+	""" return the objective function """
+	return a * x + b
 
 def get_result( x, y):
-"""Return optimal values for a and b for the equation y = a*x+b """
+    """Return optimal values for a and b for the equation y = a*x+b """
 
 # curve fit
 estimations, _ = curve_fit(set_objective, x, y)
